@@ -33,12 +33,12 @@ However, I felt that the project could be improved in some areas. Should the req
 
 ## Examples of SOLID compliance ##
 
-Single Responsibility Principle – each area of the solution has been written minimise its responsibilities.
+* Single Responsibility Principle – each area of the solution has been written minimise its responsibilities.
 
-Open/Closed Principle – the solution is extendable for new policy types without touching the code in MaturityDataService
+* Open/Closed Principle – the solution is extendable for new policy types without touching the code in MaturityDataService
 
-Liskhov Substitution Policy – using the IPolicyType interface, the BasePolicyType abstract class, and the PolicyTypeX classes; all the PolicyTypeX classes are substitutable against their base type of IPolicyType.
+* Liskhov Substitution Policy – using the IPolicyType interface, the BasePolicyType abstract class, and the PolicyTypeX classes; all the PolicyTypeX classes are substitutable against their base type of IPolicyType.
 
-Interface Segregation Principle – solution is using interfaces with only the required fields; there are no fat interfaces that require unused implementations.
+* Interface Segregation Principle – solution is using interfaces with only the required fields; there are no fat interfaces that require unused implementations.
 
-Dependency Inversion Principle – using dependency injection to decouple all areas of the solution.
+* Dependency Inversion Principle – using dependency injection to decouple all areas of the solution.
