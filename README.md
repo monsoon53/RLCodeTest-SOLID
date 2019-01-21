@@ -14,7 +14,7 @@ However, I felt that the project could be improved in some areas. Should the req
 
 ## Maturity Data Calculations ##
 * Should we need to accommodate more policy types then we have an Open/Closed Principle violation in MaturityDataService:
-  * The rules are different in each policy type for calculating Management Fee Percentage and Discretionary Bonus Eligibility.
+  * The rules are different in each policy type for calculating Management Fee Percentage and Discretionary Bonus Eligibility – we need a way to be able to add additional policy types without changing the code in MaturityDataService
   * Additional project/class library Layer added - RLCodeTest.PolicyTypes
     * Interface – IPolicyType
     * Abstract class – BasePolicyType 
@@ -26,7 +26,7 @@ However, I felt that the project could be improved in some areas. Should the req
     * PopulateValues() takes a parameter of MaturityDataModel
       * This checks the policy type and uses this information to call PopulateValues() for the relevant policy type.
   * At this point, should a new policy type be required a class of PolicyTypeX would be added, implementing IPolicyType. Additionally an instance of PolicyTypeX would need to be added to the list in the constructor of PolicyTypeService.
-* An additional subtle OCP violation was the code in the MaturityDataService that maps the MaturityDataBaseModel model to the MaturityDataModel – this has been moved to a constructor in the MaturityDataModel class.
+* An additional potential OCP violation was the code in the MaturityDataService that maps the MaturityDataBaseModel model to the MaturityDataModel – this has been moved to a constructor in the MaturityDataModel class.
 * Now we have fixed the Open/Closed Principle violations we have also made the MaturityDataService compliant with the Single Responsibility Principle; the only reason for the class to change now would be to accommodate a change to the final maturity value calculation.
 * Additionally some of the code has been refactored slightly.
 * Additional test case has been added to cover calculating a list of policies.
