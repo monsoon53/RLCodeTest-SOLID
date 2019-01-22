@@ -50,7 +50,7 @@ namespace RLCodeTest.Services.Services
 
         public MaturityDataModel CreateModelFromBaseAndPopulateValues(MaturityDataBaseModel baseModel)
         {
-            // Logic for mapping fields has been moved form here into the MaturityDataModel constructor
+            // Logic for mapping fields has been moved from here into the MaturityDataModel constructor
             MaturityDataModel model = new MaturityDataModel(baseModel);
 
             // PolicyTypeService is used populate values in accordance with rules that relate to the relevant policy type.
