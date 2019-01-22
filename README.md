@@ -1,5 +1,4 @@
 # RLCodeTest-SOLID
-# SOLID Enhancements and Modifications #
 
 The original technical project that I submitted met the requirements reasonably well as it was requested that the application that was not to be an over engineered solution - https://github.com/monsoon53/RLCodeTest-Original
 
