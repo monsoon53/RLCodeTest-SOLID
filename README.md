@@ -1,6 +1,6 @@
 # RLCodeTest-SOLID
 
-The original technical project that I submitted met the requirements reasonably well as it was requested that the application that was not to be an over engineered solution - https://github.com/monsoon53/RLCodeTest-Original
+The original technical project that I submitted met the requirements reasonably well as it was requested that the application was not to be an over engineered solution - https://github.com/monsoon53/RLCodeTest-Original
 
 However, I felt that the project could be improved in some areas. Should the requirements be for the application to be more extendable, and as compliant as possible with the SOLID Principles, these are the changes that I would make:
 
