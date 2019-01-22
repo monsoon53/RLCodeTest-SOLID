@@ -1,9 +1,9 @@
 # RLCodeTest-SOLID
 # SOLID Enhancements and Modifications #
 
-The original technical project that I submitted met the requirements reasonably well as it was requested that the application that was not to be over engineered - https://github.com/monsoon53/RLCodeTest-Original
+The original technical project that I submitted met the requirements reasonably well as it was requested that the application that was not to be an over engineered solution - https://github.com/monsoon53/RLCodeTest-Original
 
-However, I felt that the project could be improved in some areas. Should the requirement be for the application to be more extendable, and as compliant as possible with the SOLID Principles there are some changes that I would make.
+However, I felt that the project could be improved in some areas. Should the requirements be for the application to be more extendable, and as compliant as possible with the SOLID Principles there are some changes that I would make.
 
 ## XML File generation ##
 * The presence of this code in MaturityDataService is a Single Responsibility Principle violation 
