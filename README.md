@@ -1,9 +1,9 @@
 # RLCodeTest-SOLID
 # SOLID Enhancements and Modifications #
 
-The original technical project that I submitted met the requirements reasonably well as it was requested that the solution that was not to be over engineered - https://github.com/monsoon53/RLCodeTest-Original
+The original technical project that I submitted met the requirements reasonably well as it was requested that the application that was not to be over engineered - https://github.com/monsoon53/RLCodeTest-Original
 
-However, I felt that the project could be improved in some areas. Should the requirement be for the application was to be more extendable, and as compliant as possible with the SOLID Principles these are the changes that I would make.
+However, I felt that the project could be improved in some areas. Should the requirement be for the application to be more extendable, and as compliant as possible with the SOLID Principles there are some changes that I would make.
 
 ## XML File generation ##
 * The presence of this code in MaturityDataService is a Single Responsibility Principle violation 
@@ -33,12 +33,12 @@ However, I felt that the project could be improved in some areas. Should the req
 
 ## Examples of SOLID compliance ##
 
-* Single Responsibility Principle – each area of the solution has been written minimise its responsibilities.
+* Single Responsibility Principle – each area of the application has been written minimise its responsibilities.
 
-* Open/Closed Principle – the solution is extendable for new policy types without touching the code in MaturityDataService
+* Open/Closed Principle – the application is extendable for new policy types without touching the code in MaturityDataService
 
 * Liskhov Substitution Policy – using the IPolicyType interface, the BasePolicyType abstract class, and the PolicyTypeX classes; all the PolicyTypeX classes are substitutable against their base type of IPolicyType.
 
-* Interface Segregation Principle – solution is using interfaces with only the required fields; there are no fat interfaces that require unused implementations.
+* Interface Segregation Principle – the application is using interfaces with only the required fields; there are no fat interfaces that require unused implementations.
 
-* Dependency Inversion Principle – using dependency injection to decouple all areas of the solution.
+* Dependency Inversion Principle – using dependency injection to decouple all areas of the application.
